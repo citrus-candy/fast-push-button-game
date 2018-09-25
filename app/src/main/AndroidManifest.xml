@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NormalLevel1Activity" />
+        <activity android:name=".NormalLevel2Activity" />
+        <activity android:name=".NormalLevel3Activity" />
+        <activity android:name=".NormalLevel4Activity" />
+        <activity android:name=".HardLevel1Activity" />
+        <activity android:name=".HardLevel2Activity" />
+        <activity
+            android:name=".HardLevel3Activity"
+            android:label="@string/title_activity_hard_level3" />
+        <activity
+            android:name=".HardLevel4Activity"
+            android:label="@string/title_activity_hard_level4" />
+        <activity
+            android:name=".VeryHardLevel1Activity"
+            android:label="@string/title_activity_very_hard_level1" />
+        <activity
+            android:name=".VeryHardLevel2Activity"
+            android:label="@string/title_activity_very_hard_level2" />
+        <activity
+            android:name=".VeryHardLevel3Activity"
+            android:label="@string/title_activity_very_hard_level3" />
+        <activity
+            android:name=".VeryHardLevel4Activity"
+            android:label="@string/title_activity_very_hard_level4"></activity>
     </application>
 
 </manifest>

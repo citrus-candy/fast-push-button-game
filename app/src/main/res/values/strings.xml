@@ -3,4 +3,10 @@
     <string name="level_text">Level : 1</string>
     <string name="game_description">ああああ</string>
     <string name="high_score">HighScore : 10秒</string>
+    <string name="title_activity_hard_level3">HardLevel3Activity</string>
+    <string name="title_activity_hard_level4">HardLevel4Activity</string>
+    <string name="title_activity_very_hard_level1">VeryHardLevel1Activity</string>
+    <string name="title_activity_very_hard_level2">VeryHardLevel2Activity</string>
+    <string name="title_activity_very_hard_level3">VeryHardLevel3Activity</string>
+    <string name="title_activity_very_hard_level4">VeryHardLevel4Activity</string>
 </resources>
