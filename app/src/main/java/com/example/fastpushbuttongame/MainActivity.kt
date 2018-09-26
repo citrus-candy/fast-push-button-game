@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 1 -> {
                     when (level) {
-                        1, 2 -> gameDescription.text = "ボタンを全て押せ！"
+                        1, 2 -> gameDescription.text = "ラジオボタンとチェックボックスを\n" + "全て押せ！"
                         3, 4 -> gameDescription.text = "チェックボックスを全て押せ！"
                     }
                 }
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         description(gameMode, level)
-        highScore(gameMode,level)
+        //highScore(gameMode,level)
 
         // ゲームモードの選択
         radioGroup2.setOnCheckedChangeListener {
@@ -192,6 +192,11 @@ class MainActivity : AppCompatActivity() {
         startButton.setOnClickListener {
             onStartButtonTapped(it, gameMode, level)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        highScore(gameMode,level)
     }
 
     override fun onRestart() {

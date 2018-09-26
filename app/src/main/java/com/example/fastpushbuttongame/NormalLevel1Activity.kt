@@ -26,7 +26,8 @@ class NormalLevel1Activity : AppCompatActivity() {
                     true -> {
                         timerCount += 0
                         editor.putInt("N1HighScore", timerCount)
-                        if (intent.getIntExtra("N1_HIGHSCORE", 0) > timerCount) {
+                        if (intent.getIntExtra("N1_HIGHSCORE", 0) > timerCount ||
+                                intent.getIntExtra("N1_HIGHSCORE", 0) == 0) {
                             editor.apply()
                         }
                         backButton.visibility = View.VISIBLE
@@ -37,11 +38,32 @@ class NormalLevel1Activity : AppCompatActivity() {
                         backButton.visibility = View.INVISIBLE
                     }
                 }
+                /*
+                when(countFinish) {
+                    true -> {
+                        timerCount += 0
+                        finishText.text = "Finish!!"
+                        backButton.visibility = View.VISIBLE
+                    }
+                    false -> {
+                        timerCount += 1
+                        backButton.visibility = View.INVISIBLE
+                    }
+                }
+                */
                 timerText.text = "Time：" + timerCount + "msec"
             }
         }
+        /*
+        when(countFinish) {
+            true -> {
+                editor.putInt("N1_HIGHSCORE", timerCount)
+                if (intent.getIntExtra("N1_HIGHSCORE", 0) > timerCount)
+                    editor.apply()
+            }
+        }
+        */
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,7 +88,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button3.setOnClickListener {
             when (button3.text) {
                 "OK" -> button = button
@@ -82,7 +103,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button4.setOnClickListener {
             when (button4.text) {
                 "OK" -> button = button
@@ -98,7 +118,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button5.setOnClickListener {
             when (button5.text) {
                 "OK" -> button = button
@@ -114,7 +133,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button6.setOnClickListener {
             when (button6.text) {
                 "OK" -> button = button
@@ -130,7 +148,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button7.setOnClickListener {
             when (button7.text) {
                 "OK" -> button = button
@@ -146,7 +163,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button8.setOnClickListener {
             when (button8.text) {
                 "OK" -> button = button
@@ -162,7 +178,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button9.setOnClickListener {
             when (button9.text) {
                 "OK" -> button = button
@@ -178,7 +193,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button10.setOnClickListener {
             when (button10.text) {
                 "OK" -> button = button
@@ -194,7 +208,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
-
         button11.setOnClickListener {
             when (button11.text) {
                 "OK" -> button = button
@@ -211,6 +224,6 @@ class NormalLevel1Activity : AppCompatActivity() {
             if (button == 0)  countFinish = true
         }
 
-        backButton.setOnClickListener { finish()}
+        backButton.setOnClickListener { finish() }
     }
 }
