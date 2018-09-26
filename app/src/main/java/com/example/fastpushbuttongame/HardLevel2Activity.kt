@@ -187,6 +187,7 @@ class HardLevel2Activity : AppCompatActivity() {
             }
             if (button == 0)  countFinish = true
         }
+
         checkBox6.setOnClickListener {
             when (checkBox6.text) {
                 "OK" -> button = button

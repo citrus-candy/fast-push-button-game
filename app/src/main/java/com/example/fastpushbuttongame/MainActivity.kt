@@ -56,13 +56,13 @@ class MainActivity : AppCompatActivity() {
                 0 -> {
                     when (level) {
                         1, 2 -> gameDescription.text = "ボタンを全て押せ！"
-                        3, 4 -> gameDescription.text = "画像付きボタンを全て押せ！"
+                        3, 4 -> gameDescription.text = "画像に置き換えたボタンを\n全て押せ！\n(普通のボタンを押すと+100msec)"
                     }
                 }
                 1 -> {
                     when (level) {
-                        1, 2 -> gameDescription.text = "ラジオボタンとチェックボックスを\n" + "全て押せ！"
-                        3, 4 -> gameDescription.text = "チェックボックスを全て押せ！"
+                        1, 2 -> gameDescription.text = "ラジオボタンとチェックボックスを\n全て押せ！"
+                        3, 4 -> gameDescription.text = "チェックボックスを全て押せ！\n(ラジオボタンを押すと+200msec)"
                     }
                 }
                 2 -> {
@@ -191,6 +191,11 @@ class MainActivity : AppCompatActivity() {
 
         startButton.setOnClickListener {
             onStartButtonTapped(it, gameMode, level)
+        }
+
+        // 画面を閉じるボタンの処理
+        gameEndButton.setOnClickListener {
+            finish()
         }
     }
 

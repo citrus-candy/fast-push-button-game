@@ -29,7 +29,7 @@ class NormalLevel2Activity : AppCompatActivity() {
                         timerCount += 0
                         editor.putInt("N2HighScore", timerCount)
                         if (intent.getIntExtra("N2_HIGHSCORE", 0) > timerCount ||
-                                intent.getIntExtra("H1_HIGHSCORE", 0) == 0) {
+                                intent.getIntExtra("N2_HIGHSCORE", 0) == 0) {
                             editor.apply()
                         }
                         backButton2.visibility = View.VISIBLE
@@ -251,6 +251,7 @@ class NormalLevel2Activity : AppCompatActivity() {
             if (button == 0)  countFinish = true
         }
 
-        backButton2.setOnClickListener { finish()}
+        backButton2.setOnClickListener {
+            finish()}
     }
 }
