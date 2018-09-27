@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                     1 -> highScore.text = "HighScore：" + pref.getInt("VH1HighScore", 0).toString() + "msec"
                     2 -> highScore.text = "HighScore：" + pref.getInt("VH2HighScore", 0).toString() + "msec"
                     3 -> highScore.text = "HighScore：" + pref.getInt("VH3HighScore", 0).toString() + "msec"
-                    4 -> highScore.text = "HighScore：" + pref.getInt("VH4HighScore", 0).toString() + "msec"
+                    4 -> highScore.text = "HighScore：" + pref.getString("VH4HighScore", "0msec")
                 }
             }
         }
