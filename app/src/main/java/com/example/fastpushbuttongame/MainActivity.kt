@@ -67,9 +67,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 2 -> {
                     when (level) {
-                        1, 2 -> gameDescription.text = "ボタンを全て押せ！"
-                        3 -> gameDescription.text = "スイッチを全てONにしろ！"
-                        4 -> gameDescription.text = "ボタンとラジオボタンを全て押せ！"
+                        1 -> gameDescription.text = "ボタンを全て押せ！"
+                        2 -> gameDescription.text = "''ボタン''を全て押せ！"
+                        3 -> gameDescription.text = "ラジオボタンを全て押せ！"
+                        4 -> gameDescription.text = "ボタンを押すな！"
                     }
                 }
             }
@@ -85,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 when (findViewById<RadioButton>(checkedId).text) {
                     "Normal" -> gameMode = 0
                     "Hard" -> gameMode = 1
-                    "VeryHard" -> gameMode = 2
+                    "Extra" -> gameMode = 2
                 }
                 description(gameMode, level)
                 highScore(gameMode,level)
