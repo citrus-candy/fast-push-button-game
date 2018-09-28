@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
@@ -18,16 +18,16 @@
         </activity>
         <activity
             android:name=".NormalLevel1Activity"
-            android:label=".@string/title_activity_normal_level1"/>
+            android:label=".@string/title_activity_normal_level1" />
         <activity
             android:name=".NormalLevel2Activity"
-            android:label=".@string/title_activity_normal_level2"/>
+            android:label=".@string/title_activity_normal_level2" />
         <activity
             android:name=".NormalLevel3Activity"
-            android:label=".@string/title_activity_normal_level3"/>
+            android:label=".@string/title_activity_normal_level3" />
         <activity
             android:name=".NormalLevel4Activity"
-            android:label=".@string/title_activity_normal_level4"/>
+            android:label=".@string/title_activity_normal_level4" />
         <activity
             android:name=".HardLevel1Activity"
             android:label=".@string/title_activity_hard_level1" />
@@ -51,7 +51,12 @@
             android:label="@string/title_activity_very_hard_level3" />
         <activity
             android:name=".VeryHardLevel4Activity"
-            android:label="@string/title_activity_very_hard_level4"></activity>
+            android:label="@string/title_activity_very_hard_level4" />
+        <activity
+            android:name=".HighScoreClearActivity"
+            android:label="@string/title_activity_high_score_clear"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".InvisibleLevelActivity"></activity>
     </application>
 
 </manifest>

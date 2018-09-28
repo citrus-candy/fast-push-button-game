@@ -58,6 +58,9 @@ class VeryHardLevel2Activity : Activity() {
             imageView.visibility = View.VISIBLE
             imageView3.visibility = View.VISIBLE
             imageView4.visibility = View.VISIBLE
+            imageView10.visibility = View.VISIBLE
+            imageView11.visibility = View.VISIBLE
+            imageView13.visibility = View.VISIBLE
         }
         else {
             imageButton23.visibility = View.INVISIBLE
@@ -66,7 +69,9 @@ class VeryHardLevel2Activity : Activity() {
             imageView.visibility = View.INVISIBLE
             imageView3.visibility = View.INVISIBLE
             imageView4.visibility = View.INVISIBLE
-
+            imageView10.visibility = View.INVISIBLE
+            imageView11.visibility = View.INVISIBLE
+            imageView13.visibility = View.INVISIBLE
         }
     }
 
@@ -88,11 +93,11 @@ class VeryHardLevel2Activity : Activity() {
             }
             buttonText10.text = "Button：" + button
             imageButton22.contentDescription = "OK"
-            imageButton22.setImageResource(R.drawable.button_start2)
+            imageView12.setImageResource(R.drawable.button_start2)
 
             if (buttonFlag3) {
                 imageButton25.contentDescription = ""
-                imageButton25.setImageResource(R.drawable.reset_buttn_off)
+                imageView13.setImageResource(R.drawable.reset_buttn_off)
                 buttonFlag3 = false
             }
 
@@ -113,7 +118,7 @@ class VeryHardLevel2Activity : Activity() {
             }
             buttonText10.text = "Button：" + button
             imageButton23.contentDescription = "OK"
-            imageButton23.setImageResource(R.drawable.buttun_bus_on)
+            imageView11.setImageResource(R.drawable.buttun_bus_on)
 
             buttonFlag1 = true
             if (buttonFlag1 && buttonFlag2) {
@@ -134,7 +139,7 @@ class VeryHardLevel2Activity : Activity() {
             }
             buttonText10.text = "Button：" + button
             imageButton24.contentDescription = "OK"
-            imageButton24.setImageResource(R.drawable.hokousyayou_button_omachi)
+            imageView10.setImageResource(R.drawable.hokousyayou_button_omachi)
 
             buttonFlag2 = true
             if (buttonFlag1 && buttonFlag2) {
@@ -155,15 +160,15 @@ class VeryHardLevel2Activity : Activity() {
             }
             buttonText10.text = "Button：" + button
             imageButton25.contentDescription = "OK"
-            imageButton25.setImageResource(R.drawable.reset_buttn_on)
+            imageView13.setImageResource(R.drawable.reset_buttn_on)
 
             visibilityButton(false)
             imageButton22.contentDescription = ""
-            imageButton22.setImageResource(R.drawable.button_start1)
+            imageView12.setImageResource(R.drawable.button_start1)
             imageButton23.contentDescription = ""
-            imageButton23.setImageResource(R.drawable.buttun_bus_off)
+            imageView11.setImageResource(R.drawable.buttun_bus_off)
             imageButton24.contentDescription = ""
-            imageButton24.setImageResource(R.drawable.hokousyayou_button_oshite)
+            imageView10.setImageResource(R.drawable.hokousyayou_button_oshite)
             button43.visibility = View.INVISIBLE
             buttonFlag1 = false
             buttonFlag2 = false
@@ -186,7 +191,7 @@ class VeryHardLevel2Activity : Activity() {
             }
             buttonText10.text = "Button：" + button
             imageButton25.contentDescription = "OK"
-            imageButton25.setImageResource(R.drawable.reset_buttn_on)
+            imageView13.setImageResource(R.drawable.reset_buttn_on)
             button43.contentDescription = "OK"
             buttonFlag4 = true
 

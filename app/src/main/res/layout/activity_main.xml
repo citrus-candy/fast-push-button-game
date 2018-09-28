@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,14 +14,17 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="タイトル"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="50sp"
+        android:gravity="center"
+        android:text="早押しボタン"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
-        app:layout_constraintEnd_toStartOf="@+id/gameEndButton"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
 
     <Button
         android:id="@+id/startButton"
@@ -31,11 +35,12 @@
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/highScore"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="330dp"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -43,6 +48,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="28dp"
         android:checkedButton="@+id/normal"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/levelText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +91,7 @@
         android:id="@+id/levelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:text="@string/level_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -111,18 +117,17 @@
         android:id="@+id/highScore"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginLeft="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="36dp"
         android:gravity="center"
         android:text="@string/high_score"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
@@ -137,4 +142,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/invisibleStageButton"
+        android:layout_width="117dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@android:color/transparent" />
+
 </android.support.constraint.ConstraintLayout>

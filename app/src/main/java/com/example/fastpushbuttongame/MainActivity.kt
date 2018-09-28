@@ -77,7 +77,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         description(gameMode, level)
-        //highScore(gameMode,level)
 
         // ゲームモードの選択
         radioGroup2.setOnCheckedChangeListener {
@@ -197,6 +196,18 @@ class MainActivity : AppCompatActivity() {
         // 画面を閉じるボタンの処理
         gameEndButton.setOnClickListener {
             finish()
+        }
+
+        // ハイスコアをクリアするボタンの処理
+        /*highScoreClearButton.setOnClickListener {
+            intent = Intent(this, HighScoreClearActivity::class.java)
+            startActivity(intent)
+        }
+        */
+
+        invisibleStageButton.setOnClickListener {
+            val intent2 = Intent(this, InvisibleLevelActivity::class.java)
+            startActivity(intent2)
         }
     }
 

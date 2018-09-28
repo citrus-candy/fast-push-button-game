@@ -16,9 +16,9 @@ class VeryHardLevel4Activity : Activity() {
         buttonText12.text = "Button:NotAvailable"
         timerText12.text = "Timer:Infinity"
 
-        val pref = PreferenceManager.getDefaultSharedPreferences(this)
-        val edit = pref.edit()
-        edit.putString("VH4HighScore", "Infinity").apply()
+        //val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        //val edit = pref.edit()
+        //edit.putString("VH4HighScore", "Infinity").apply()
 
         imageButton29.setOnClickListener {
             var warning = 1234

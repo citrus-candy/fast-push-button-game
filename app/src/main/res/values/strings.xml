@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fast Push Button Game</string>
+    <string name="app_name">早押しボタン</string>
     <string name="level_text">Level：1</string>
     <string name="game_description">ああああ</string>
     <string name="high_score">HighScore：0msec</string>
@@ -11,4 +11,6 @@
     <string name="title_activity_very_hard_level4">VeryHardLevel4Activity</string>
     <string name="restButton_text">Button：</string>
     <string name="time_text">Time：</string>
+    <string name="title_activity_high_score_clear">HighScoreClearActivity</string>
+    <string name="button_count_text">100</string>
 </resources>
